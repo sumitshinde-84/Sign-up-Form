@@ -171,8 +171,7 @@ button:hover{
     
     display: flex;
     flex-direction: column;
-    
-
+    margin-top: 10px;
     margin-right:10px;
     margin-left:58px
     
@@ -184,7 +183,7 @@ input[type='text'],[type='email'],[type='tel'],[type='password']{
     width:200px;
     border: none;
     outline: 1px solid  var(--smoke-white);
-    height: 3vh;
+    height: 4vh;
     background-color:var(--black-bg);
     border-radius: 3px;
     font-size: 100%;
@@ -202,9 +201,10 @@ input[type='text'],[type='email'],[type='tel'],[type='password']{
 
 
 label{
-    font-size: 13px;
+    font-size: 10px;
     color: var(--smoke-white);
     margin-bottom: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 form p{
