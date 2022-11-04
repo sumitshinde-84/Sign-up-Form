@@ -1,3 +1,14 @@
+:root{
+   
+    --logo-background:rgba(206, 34, 34, 0.5);
+    --black-bg:rgb(0,0,0);
+    --smoke-white:rgba(185,185, 185, 1);
+    --red-bg:rgba(246, 17, 17, 0.6);
+    --red-bg-dark: rgba(206, 34, 34, 1);
+    --red:red;
+
+}
+
 @font-face {
     font-family: logoFont;
     src: url(font/Norse-Bold.otf);
@@ -29,7 +40,7 @@
 
 .form-section{
     width: 70vw;
-    background-color: whitesmoke;
+    
     height: 100vh;
     
 }
@@ -39,24 +50,24 @@
 
     width: 100%;
     height: 150px;
-    background-color: rgba(206, 34, 34, 0.5);
+    background-color: var(--logo-background);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 11rem;
-    color: rgb(21, 0, 0);
-    font-size: 50px;
+    color: var(--black-bg);
+    font-size: 3vw;
     font-family: logoFont;
-    gap: 2;
+    
     
     
     
 }
 
 img{
-    width: 10rem;
-    height: 150px;
+    width: 10vw;
+    height: 17vh;
     
     
     
@@ -66,8 +77,8 @@ img{
     
     height: 40vh;
     background-color: rgb(0, 6, 6);
-    color: rgba(185,185, 185, 1);
-    font-size: 25px;
+    color: var(--smoke-white);
+    font-size: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,11 +88,11 @@ img{
 
  .header p{
     padding: 20px;
-    width: 800px;
+    width:50vw;
     padding-left: 70px;
     font-family:  'Teko', sans-serif;
     letter-spacing: 1.2px;
-    line-height: 30px;
+    line-height: 1.1em;
 }
 
 
@@ -89,15 +100,15 @@ img{
 
 form{
     height: 35vh;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 5px 0px 5px rgba(185,185, 185, 1);
+    background-color:var(--black-bg);
+    box-shadow: 5px 0px 5px var(--smoke-white);
 }
 
 
 .btn{
     height: 25vh;
     background-color: black;
-    box-shadow:  5px 0px 7px rgba(185,185, 185, 1);
+    box-shadow:  5px 0px 7px var(--smoke-white);
 }
 
 button{
@@ -106,16 +117,30 @@ button{
      top:30px;
      left: 50px;
     
-    background-color: rgba(206, 34, 34, 0.5);
+    background-color: var(--red-bg);
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+button:hover{
+
+    padding: 15px 50px;
+     position: relative;
+     top:30px;
+     left: 50px;
+     background-color:var(--red-bg-dark);
+    
     border: none;
     border-radius: 5px;
     font-weight: 800;
     font-size: 16px;
 }
-
 .btn p{
     font-size: 16px;
-    color: rgba(185,185, 185, 1);
+    color:var(--smoke-white);
     margin-top: 30px;
     margin-left: 60px;
    display: flex;
@@ -126,7 +151,7 @@ button{
 }
 
 .btn a{
-    color: rgba(255, 1, 1, 0.5);
+    color: var(--red-bg);
     font-weight: 500;
     font-size: 17px;
     text-decoration: none;
@@ -154,12 +179,12 @@ button{
 input[type='text'],[type='email'],[type='tel'],[type='password']{
     width:200px;
     border: none;
-    outline: 1px solid rgb(255, 255, 255);
+    outline: 1px solid  var(--smoke-white);
     height: 25px;
-    background-color: black;
+    background-color:var(--black-bg);
     border-radius: 3px;
     font-size: 100%;
-    color: rgba(185,185, 185, 1);
+    color: var(--smoke-white);
     font-family: 'Courier New', Courier, monospace;
     
 }
@@ -167,12 +192,12 @@ input[type='text'],[type='email'],[type='tel'],[type='password']{
 
 label{
     font-size: 13px;
-    color: rgba(185,185, 185, 1);
+    color: var(--smoke-white);
     margin-bottom: 4px;
 }
 
 form p{
-color: rgba(185,185, 185, 1);
+color: var(--smoke-white);
 font-size: 25px;
 font-weight: 500;
 margin-left: 55px;
@@ -180,5 +205,19 @@ padding-top: 10px;
 }
 
 
+#match{
+    color:var(--red);
+    font-size: 15px;
+    position: relative;
+    bottom: 6px;
+    right:35px;
+}
 
+input:focus{
 
+    outline: 1px var(--red) solid;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid {
+    background-color: var(--red-bg);
+  }

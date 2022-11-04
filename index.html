@@ -45,11 +45,12 @@
     
     <div class="input-div">
         <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" placeholder=" " required>
+       
     </div>
     <div class="input-div">
         <label for="phone">PHONE NUMBER</label>
-        <input type="tel" name="phone" id="phone">
+        <input type="tel" name="phone" id="phone" placeholder=" " maxlength="10" pattern="[789][0-9]{9}" required>
     </div>
     
     </div>
@@ -59,11 +60,12 @@
     <div class="row">
         <div class="input-div">
             <label for="pass">PASSWORD</label>
-            <input type="password" name="password" id="pass">
+            <input type="password" name="password" id="pass" placeholder=" " required>
+            <p id="match"></p>
         </div>
         <div class="input-div">
             <label for="passCon">CONFORM PASSWORD</label>
-            <input type="password" name="conform" id="passCon">
+            <input type="password" name="conform" id="passCon" placeholder=" "required>
         </div>
         
         </div>
@@ -74,7 +76,7 @@
 
 </form>
 <div class="btn">
-<button>Create Account</button>
+<button class="st-btn" type="submit">Create Account</button>
 <p>Already have an account?<a href="#">Log in</a></p>
 
 </div>
@@ -93,6 +95,6 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 </html>
