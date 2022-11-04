@@ -9,6 +9,8 @@
 
 }
 
+
+
 @font-face {
     font-family: logoFont;
     src: url(font/Norse-Bold.otf);
@@ -24,7 +26,7 @@
     width: 100vw;
     height: auto;
     display: flex;
-
+ 
 }
 
 .media{
@@ -40,7 +42,7 @@
 
 .form-section{
     width: 70vw;
-    
+    background-color: black;
     height: 100vh;
     
 }
@@ -102,6 +104,7 @@ form{
     height: 35vh;
     background-color:var(--black-bg);
     box-shadow: 5px 0px 5px var(--smoke-white);
+    
 }
 
 
@@ -113,10 +116,9 @@ form{
 
 button{
     padding: 15px 50px;
-     position: relative;
-     top:30px;
-     left: 50px;
-    
+    position: relative;
+    top:30px;
+    left: 50px;
     background-color: var(--red-bg);
     border: none;
     border-radius: 5px;
@@ -172,6 +174,7 @@ button:hover{
     margin-top:30px;
     margin-right:30px;
     margin-left:58px
+    
 
     
 }
@@ -187,6 +190,13 @@ input[type='text'],[type='email'],[type='tel'],[type='password']{
     color: var(--smoke-white);
     font-family: 'Courier New', Courier, monospace;
     
+    
+}
+
+
+.password{
+
+    position: relative;
 }
 
 
@@ -208,9 +218,10 @@ padding-top: 10px;
 #match{
     color:var(--red);
     font-size: 15px;
-    position: relative;
-    bottom: 6px;
-    right:35px;
+    position: absolute;
+    bottom: -20px;
+    left:-35px;
+    width: 100%;
 }
 
 input:focus{

@@ -26,17 +26,17 @@
 <p>This is the Devil world ! you know you need something like this in your life to make adventure then Dont worry Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cupiditate? <br> world of is full of adventure</p>
 <p><i>you know you want to</i></p>
 </div>
-<form action="" method="post">
+<form action="" method="post" id="sign">
     <p>Let do this!</p>
 
 <div class="row">
 <div class="input-div">
     <label for="firstName">FIRST NAME</label>
-    <input type="text" name="firstname" id="firstName">
+    <input type="text" name="firstname" id="firstName" autocomplete="off">
 </div>
 <div class="input-div">
     <label for="lastName">LAST NAME</label>
-    <input type="text" name="lastname" id="lastName">
+    <input type="text" name="lastname" id="lastName" autocomplete="off">
 </div>
 
 </div>
@@ -45,12 +45,12 @@
     
     <div class="input-div">
         <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email" placeholder=" " required>
+        <input type="email" name="email" id="email" placeholder=" " required autocomplete="off">
        
     </div>
     <div class="input-div">
         <label for="phone">PHONE NUMBER</label>
-        <input type="tel" name="phone" id="phone" placeholder=" " maxlength="10" pattern="[789][0-9]{9}" required>
+        <input type="tel" name="phone" id="phone" placeholder=" " maxlength="10" autocomplete="off" pattern="[789][0-9]{9}" required>
     </div>
     
     </div>
@@ -58,14 +58,14 @@
 
 
     <div class="row">
-        <div class="input-div">
+        <div class="input-div password">
             <label for="pass">PASSWORD</label>
-            <input type="password" name="password" id="pass" placeholder=" " required>
+            <input type="password" name="password" id="pass" placeholder=" " required autocomplete="off">
             <p id="match"></p>
         </div>
         <div class="input-div">
             <label for="passCon">CONFORM PASSWORD</label>
-            <input type="password" name="conform" id="passCon" placeholder=" "required>
+            <input type="password" name="conform" id="passCon" placeholder=" "required autocomplete="off">
         </div>
         
         </div>
@@ -76,7 +76,7 @@
 
 </form>
 <div class="btn">
-<button class="st-btn" type="submit">Create Account</button>
+<button class="st-btn" type="submit"  form="sign">Create Account</button>
 <p>Already have an account?<a href="#">Log in</a></p>
 
 </div>
