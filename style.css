@@ -77,7 +77,7 @@ img{
 
 .header{
     
-    height: 330px;
+    height: 40vh;
     background-color: rgb(0, 6, 6);
     color: var(--smoke-white);
     font-size: 1.5vw;
@@ -101,7 +101,7 @@ img{
 
 
 form{
-    height: 300px;
+    height: 35vh;
     background-color:var(--black-bg);
     box-shadow: 5px 0px 5px var(--smoke-white);
     
@@ -109,7 +109,7 @@ form{
 
 
 .btn{
-    height:190px;
+    height:25vh;
     background-color: black;
     box-shadow:  5px 0px 7px var(--smoke-white);
 }
