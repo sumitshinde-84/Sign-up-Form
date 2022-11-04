@@ -116,7 +116,7 @@ form{
 }
 
 button{
-    padding: 15px 50px;
+    padding: 15px 35px;
     position: relative;
     top:30px;
     left: 50px;
@@ -130,7 +130,7 @@ button{
 
 button:hover{
 
-    padding: 15px 50px;
+    padding: 15px 35px;
      position: relative;
      top:30px;
      left: 50px;
